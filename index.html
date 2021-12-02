@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Demineur</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <script src="js/init.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/demineur.js"></script>
+  </head>
+  <body onselectstart="return false" oncontextmenu="return false">
+
+    <table>
+      <caption>Démineur</caption>
+
+      <tbody>
+      <!-- ligne des boutons
+        - première case: chronomètre
+        - deuxième case: bouton play/pause
+        - troisième case: nombre de mines restantes
+      -->
+      <tr>
+          <td><label id="chronometre">0</label></td>
+          <td><button id="play-pause">0</button></td>
+          <td><label id="compteurMines">0</label></td>
+      </tr>
+      <tr colspan="3"><canvas id="canvasDemineur"></canvas></tr>
+    </tbody>
+    </table>
+
+  </body>
+</html>
